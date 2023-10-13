@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page for pizza lovers";
+    TimeSpan timeInBusiness = DateTime.Now - new DateTime(2018, 8, 14);
+}
+
+<!-- Include your external stylesheet link here -->
+<link rel="stylesheet" href="Page/style.css">
+
+<div class="text-center">
+    <h1 class="display-4" style="font-size: 3rem; font-weight: bold; color: #FF5733;">Welcome to Karan Pizza</h1>
+    <p class="lead" style="font-size: 1.25rem; color: #333;">The best pizza in town for @Convert.ToInt32(timeInBusiness.TotalDays) days!</p>
+</div>
+
+<div class="container">
+    <h2 style="color: #FF5733;">Our most popular pizzas</h2>
+    <br />
+    <div class="row">
+        <div class="col-sm-4" style="padding: 0 10px;">
+            <h3 style="color: #333;">Cheese Pizza</h3>
+            <p style="font-size: 1rem; color: #555;">This is our most popular pizza, made with fresh mozzarella cheese, pepperoni, and sausage.</p>
+        </div>
+        <div class="col-sm-4" style="padding: 0 10px;">
+            <h3 style="color: #333;">Pineer Pizza</h3>
+            <p style="font-size: 1rem; color: #555;">Perfect for those who love a bit of spice, with fresh mozzarella cheese, pepperoni, sausage, and jalapeños.</p>
+        </div>
+        <div class="col-sm-4" style="padding: 0 10px;">
+            <h3 style="color: #333;">Chicken Pizza</h3>
+            <p style="font-size: 1rem; color: #555;">A great option for vegetarians, made with fresh mozzarella cheese, mushrooms, onions, and green peppers.</p>
+        </div>
+    </div>
+</div>
